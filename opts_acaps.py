@@ -17,13 +17,13 @@ def parse_opt():
     parser.add_argument(
         '--input_json',
         type=str,
-        default='/home/cxu-serve/p1/rohan27/research/audiocaps/acaps_pytorch/data/capinfo_acaps.json',
+        default='data/capinfo_acaps.json',
         help='path to the json file containing video info')
 
     parser.add_argument(
         '--info_json',
         type=str,
-        default='/home/cxu-serve/p1/rohan27/research/audiocaps/acaps_pytorch/data/info_acaps.json',
+        default='data/info_acaps.json',
         help='path to the json file containing additional info and vocab')
 
     parser.add_argument(

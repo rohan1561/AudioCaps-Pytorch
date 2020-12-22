@@ -17,19 +17,19 @@ def parse_opt():
     parser.add_argument(
         '--input_json',
         type=str,
-        default='/home/cxu-serve/p1/rohan27/research/audiocaps/code2/data/videodatainfo_2017_ustc.json',
+        default='data/videodatainfo_2017_ustc.json',
         help='path to the json file containing video info')
 
     parser.add_argument(
         '--info_json',
         type=str,
-        default='/home/cxu-serve/p1/rohan27/research/audiocaps/code2/data/info.json',
+        default='data/info.json',
         help='path to the json file containing additional info and vocab')
 
     parser.add_argument(
         '--caption_json',
         type=str,
-        default='/home/cxu-serve/p1/rohan27/research/audiocaps/code2/data/caption.json',
+        default='data/caption.json',
         help='path to the processed video caption json')
 
     parser.add_argument(
@@ -113,11 +113,11 @@ def parse_opt():
         '--gpu', type=str, default='0', help='gpu device number')
     
     parser.add_argument(
-        '--output_dir', type=str, help='output directory of npy',
+        '--output_dir', type=str, help='feature directory',
         default='/home/cxu-serve/p1/rohan27/research/audiocaps/OriginalACAPS/code/data/audiocaps/features/'
     )
     parser.add_argument(
-        '--video_dir', type=str, help='training videos directory',
+        '--video_dir', type=str, help='training videos directory for msrvtt',
         default='/home/cxu-serve/p1/ytian21/dat/msrvtt_2017/train-video/'
     )
     parser.add_argument(
